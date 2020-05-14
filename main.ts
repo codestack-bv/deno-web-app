@@ -5,7 +5,10 @@ const PORT = 80;
 const app = new Application();
 
 app
-  .file('/style.css', 'public/style.css')
+  .static('/css', 'public/assets/css')
+  .static('/fonts', 'public/assets/fonts')
+  .static('/img', 'public/assets/img')
+  .static('/js', 'public/assets/js')
   .file('/', 'public/index.html')
   .start({ port: PORT });
 
