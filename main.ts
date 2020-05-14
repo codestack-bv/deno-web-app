@@ -1,4 +1,3 @@
-import { serve } from './deps.ts';
 import { Application } from './deps.ts';
 
 const PORT = 80;
